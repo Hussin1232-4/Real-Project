@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66CD18C4-94AE-49A6-8487-70AFC63BE113}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RealProjectWinFormCoures19</RootNamespace>
+    <AssemblyName>RealProjectWinFormCoures19</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountSettingsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSettingsScreen.Designer.cs">
+      <DependentUpon>AccountSettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewPersonScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewPersonScreen.Designer.cs">
+      <DependentUpon>AddNewPersonScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationsScreen.Designer.cs">
+      <DependentUpon>ApplicationsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteScreen.Designer.cs">
+      <DependentUpon>DeleteScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriversScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriversScreen.Designer.cs">
+      <DependentUpon>DriversScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeopleScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeopleScreen.Designer.cs">
+      <DependentUpon>PeopleScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonDetails.Designer.cs">
+      <DependentUpon>PersonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateScreen.Designer.cs">
+      <DependentUpon>UpdateScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersScreen.Designer.cs">
+      <DependentUpon>UsersScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountSettingsScreen.resx">
+      <DependentUpon>AccountSettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewPersonScreen.resx">
+      <DependentUpon>AddNewPersonScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationsScreen.resx">
+      <DependentUpon>ApplicationsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteScreen.resx">
+      <DependentUpon>DeleteScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriversScreen.resx">
+      <DependentUpon>DriversScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeopleScreen.resx">
+      <DependentUpon>PeopleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonDetails.resx">
+      <DependentUpon>PersonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UpdateScreen.resx">
+      <DependentUpon>UpdateScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17858PIC7Fn4N1f658PIC4xdB_PIC2018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23258PICTbI1ff78eJErN_PIC2018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Labtope.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-x-10353.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combine-data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-square-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-square-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-12-19_20-55-48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContactsBusinessLayer\ContactsBusinessLayer.csproj">
+      <Project>{c8d34fd4-4f59-43f2-a1a5-126be02df6db}</Project>
+      <Name>ContactsBusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\famous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\join%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citizenship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset-password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gender-equality.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
